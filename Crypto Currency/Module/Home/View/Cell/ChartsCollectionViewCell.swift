@@ -1,8 +1,8 @@
 //
 //  ChartsCollectionViewCell.swift
-//  MadDevs(Crypto)
+//  Crypto Currency
 //
-//  Created by Рамазан Юсупов on 30/7/21.
+//  Created by Aidar Bekturov on 13/12/21.
 //
 
 import UIKit
@@ -29,6 +29,7 @@ class ChartsCollectionViewCell: UICollectionViewCell {
         imageView.setCircleCorner(with: 16)
     }
     
+    // tune chart with own data
     private func chart(with color: UIColor, nums: [Double]) {
         
         lineChartEntry.removeAll()
@@ -54,6 +55,7 @@ class ChartsCollectionViewCell: UICollectionViewCell {
         graphView.isUserInteractionEnabled = false
     }
     
+    // configure collection cell
     func configureCell(with model: SaveModel, balance: Double) {
         guard let currency = model.currencies.first else {return}
         chartNums = [
@@ -74,6 +76,7 @@ class ChartsCollectionViewCell: UICollectionViewCell {
         convertedLabel.text = String(format: "%.02f", (balance / (currency.price))) + (" \(model.symbol)")
     }
     
+    // configure collection cell
     func configureCell(with model: data, balance: Double) {
         guard let usd = model.quote?.uSD else {return}
         chartNums = [
@@ -95,10 +98,12 @@ class ChartsCollectionViewCell: UICollectionViewCell {
         convertedLabel.text =  String(format: "%.02f", (balance / (usd.price ?? 0.0))) + (" \(model.symbol ?? "")")
     }
     
+    // set image relatively coin
     private func setImage(for currency: String) -> String {
         ["ETH", "BTC", "XRP", "LTC"].contains(currency) ? currency : "UNK"
     }
     
+    // set color to chart relatively coin
     private func setColorFor(currency: String) -> UIColor {
         switch currency {
         case "BTC":

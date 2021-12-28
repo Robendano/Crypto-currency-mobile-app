@@ -9,14 +9,7 @@ import Foundation
 import Alamofire
 import RealmSwift
 
-protocol JSONConverter {
-    func convertFromJSON<T: Codable>(model: T.Type, data: Data?) -> T?
-}
-
-protocol Requests {
-    func sendRequest<T: Codable>(urlString: String, complition: @escaping ((T?, String?) -> Void))
-}
-
+// class for sending requests
 class ServerManager: HTTPRequest {
     
     private override init (){}
@@ -27,21 +20,26 @@ class ServerManager: HTTPRequest {
 
 
 extension ServerManager {
+    
     func getChange(completion: @escaping (CryptoModel?, String?) -> Void) {
+        // main URL
         let urlString = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
         
         let headers: HTTPHeaders = [
             "X-CMC_PRO_API_KEY": "2790f485-8b4c-44fb-87b2-9be8df922e39",
             "Content-Type" : "application/json"
         ]
+        // tune request
         self.get(url: urlString, header: headers, complition: { [weak self] (data) in
             guard let data = data,
                   let self = self
             else { return }
             
             do {
+                // converting JSON to own model
                 let convertedData = try JSONDecoder().decode(CryptoModel.self, from: data)
                 
+                // saving info to local storage
                 for i in 0 ..< (convertedData.data?.count ?? 0) {
                     guard let model = convertedData.data?[i] else { return }
                     self.save(model: model)
@@ -56,7 +54,9 @@ extension ServerManager {
         })
     }
 }
-extension ServerManager: JSONConverter {
+
+extension ServerManager {
+    // method for converting JSON to MODEL
     func convertFromJSON<T: Codable>(model: T.Type, data: Data?) -> T? {
         guard let data = data else {return nil}
         return try? JSONDecoder().decode(model.self, from: data)
@@ -64,6 +64,7 @@ extension ServerManager: JSONConverter {
 }
 
 extension ServerManager {
+    // saving to local database method
     private func save(model: data) {
         let saveModel = SaveModel()
         let current = Current()

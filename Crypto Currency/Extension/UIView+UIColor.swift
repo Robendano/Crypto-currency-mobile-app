@@ -9,6 +9,7 @@ import UIKit
 
 extension UIView {
     
+    // for setting view blured
     func setBlur(with effect: UIBlurEffect.Style) {
         let blurEffect = UIBlurEffect(style: effect)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -17,11 +18,13 @@ extension UIView {
         addSubview(blurEffectView)
     }
     
+    // for circling corner
     func setCircleCorner(with radius: CGFloat = 0) {
         layer.cornerRadius = radius
         layer.masksToBounds = true
     }
     
+    // for randomize balance's view background color
     func addGradientBackground() {
         let random = UIColor.random().cgColor
         let random2 = UIColor.random().cgColor

@@ -9,6 +9,7 @@ import UIKit
 
 extension UIViewController {
     
+    // it is method for setting Navigation bar transparent
     func setupTransparentNavigationBar() {
         navigationController?.navigationBar.barTintColor = .clear
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -22,6 +23,7 @@ extension UIViewController {
         navigationController?.navigationBar.isTranslucent = true
     }
     
+    // it is method for setting navigation back button with custom image
     func setRightButton() {
         let rightButton = UIButton()
         let config = UIImage.SymbolConfiguration(scale: .large)

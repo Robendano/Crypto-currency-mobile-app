@@ -7,6 +7,7 @@
 
 import UIKit
 
+// collection cell, balance cell
 class BalanceCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var currencyLabel: UILabel!
@@ -21,15 +22,16 @@ class BalanceCollectionViewCell: UICollectionViewCell {
         configureCollectionView()
     }
     
+    // cleaning reusable cell
     override func prepareForReuse() {
         super.prepareForReuse()
-        // for cleaning reusable views
         currencyLabel.text = nil
         amountLabel.text = nil
         withDrawBtn = nil
         depositBtn = nil
     }
     
+    // configure collection collection
     private func configureCollectionView() {
         setCircleCorner(with: 16)
         withDrawBtn.setCircleCorner(with: 8)
@@ -39,7 +41,8 @@ class BalanceCollectionViewCell: UICollectionViewCell {
         depositBtn.setBlur(with: .systemUltraThinMaterialLight)
     }
     
-    private func configureCell() {
+    // configure collection cell
+    func configureCell() {
         background.addGradientBackground()
         imageView.image = UIImage(named: "bitcoin")
         currencyLabel.text = "$"
@@ -47,6 +50,7 @@ class BalanceCollectionViewCell: UICollectionViewCell {
     }
 }
 
+// getting identifier of collection cell
 extension UICollectionViewCell {
     static func identifier() -> String {
         String(describing: self)

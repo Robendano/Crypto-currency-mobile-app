@@ -1,12 +1,13 @@
 //
 //  CryptoModel.swift
-//  MadDevs(Crypto)
+//  Crypto Currency
 //
-//  Created by Рамазан Юсупов on 2/8/21.
+//  Created by Aidar Bekturov on 13/12/21.
 //
 
 import Foundation
 
+// JSON model to convert
 struct CryptoModel: Codable {
   var data: [data]?
 }

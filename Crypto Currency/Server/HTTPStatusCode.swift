@@ -7,6 +7,7 @@
 
 import Foundation
 
+// all statuses
 public enum HTTPStatusCode: Int {
     case ok = 200
     case created = 201

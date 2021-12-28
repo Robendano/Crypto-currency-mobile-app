@@ -7,6 +7,7 @@
 
 import UIKit
 
+// Here extending UIViewController class for getting identifier of Controller, and controller it self.
 extension UIViewController {
     static func identifier() -> String {
         String(describing: self)

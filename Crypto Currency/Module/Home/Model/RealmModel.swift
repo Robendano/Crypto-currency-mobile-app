@@ -8,6 +8,7 @@
 import Foundation
 import RealmSwift
 
+// model in local storage
 class SaveModel: Object {
     
   @objc dynamic var id: Int = 0

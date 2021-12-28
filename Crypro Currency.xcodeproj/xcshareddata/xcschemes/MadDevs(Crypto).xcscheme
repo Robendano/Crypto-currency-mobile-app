@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1250"
+   LastUpgradeVersion = "1310"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -34,6 +34,20 @@
                ReferencedContainer = "container:MadDevs(Crypto).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F2DF200626B3C7780007D25F"
+               BuildableName = "MadDevs(Crypto)Tests.xctest"
+               BlueprintName = "MadDevs(Crypto)Tests"
+               ReferencedContainer = "container:MadDevs(Crypto).xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +56,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2DF200626B3C7780007D25F"
-               BuildableName = "MadDevs(Crypto)Tests.xctest"
-               BlueprintName = "MadDevs(Crypto)Tests"
-               ReferencedContainer = "container:MadDevs(Crypto).xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -70,10 +74,19 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2DF1FF026B3C76F0007D25F"
             BuildableName = "MadDevs(Crypto).app"
+            BlueprintName = "Crypto-Currency"
+            ReferencedContainer = "container:Crypro Currency.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F2DF1FF026B3C76F0007D25F"
+            BuildableName = "MadDevs(Crypto).app"
             BlueprintName = "MadDevs(Crypto)"
             ReferencedContainer = "container:MadDevs(Crypto).xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

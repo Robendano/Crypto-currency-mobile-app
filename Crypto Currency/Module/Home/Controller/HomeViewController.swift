@@ -1,8 +1,8 @@
 //
 //  HomeViewController.swift
-//  MadDevs(Crypto)
+//  Crypto Currency
 //
-//  Created by Рамазан Юсупов on 30/7/21.
+//  Created by Aidar Bekturov on 13/12/21.
 //
 
 import UIKit
@@ -11,16 +11,8 @@ import RealmSwift
 class HomeViewController: UIViewController {
     
     // MARK: - IBOutlets
-    
     @IBOutlet weak var ChartsCollView: UICollectionView!
     @IBOutlet weak var BalanceCollView: UICollectionView!
-    
-    private lazy var animatingImage: AnimationView = {
-        let view = AnimationView()
-        view.backgroundColor = .black
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
     
     private var arrOfModels: [data] = []
     
@@ -32,27 +24,27 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // Life cycle of view controller
     override func viewDidLoad() {
         super.viewDidLoad()
         server()
-        setUp()
         getFromDataBase()
-        // Do any additional setup after loading the view.
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI()
-        animatingImage.animate()
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        // for checking internet connectivity
         if !HTTPRequest.isConnectedToNetwork(){createAlert(with: "No Internet", message: "Check connctinvity to internet")}
     }
+    
+    // configure UI of app
     private func configureUI() {
-        
         setRightButton()
         setBackButton(with: "arrow.left", title: "Portfolio")
         navigationController?.navigationItem.largeTitleDisplayMode = .always
@@ -76,6 +68,8 @@ class HomeViewController: UIViewController {
     }
 }
 
+
+// tune collection view
 extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
@@ -87,6 +81,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             return 0
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case ChartsCollView:
@@ -110,6 +105,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             return UICollectionViewCell()
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView {
         case ChartsCollView:
@@ -122,24 +118,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 }
 
-//MARK: - Animation View
-
-extension HomeViewController {
-    private func setUp() {
-        view.addSubview(animatingImage)
-        NSLayoutConstraint.activate(
-            [
-                animatingImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                animatingImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                animatingImage.topAnchor.constraint(equalTo: view.topAnchor),
-                animatingImage.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            ]
-        )
-    }
-}
-
-//MARK: - Server
-
+//MARK: - Server methods
 extension HomeViewController {
     private func server() {
         ServerManager.instance.getChange { cur, err in
@@ -155,7 +134,6 @@ extension HomeViewController {
 }
 
 //MARK: - Realm DataBase
-
 extension HomeViewController {
     private func getFromDataBase() {
         DispatchQueue.main.async { [weak self] in

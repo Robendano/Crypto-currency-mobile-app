@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8366B496277AEE3100724841 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B495277AEE3100724841 /* ControllerFactory.swift */; };
+		8366B4A2277AF2F800724841 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B4A0277AF2F700724841 /* SceneDelegate.swift */; };
+		8366B4A3277AF2F800724841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366B4A1277AF2F800724841 /* AppDelegate.swift */; };
+		8366B4A9277B643900724841 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8366B4A8277B643900724841 /* Images.xcassets */; };
+		F195459C08B65E6D02394A19 /* Pods_MadDevs_Crypto_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3763A3BE66F101DBD3E8BD8 /* Pods_MadDevs_Crypto_.framework */; };
 		F253459326B96C4E006AC106 /* RealmDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253459226B96C4E006AC106 /* RealmDatabase.swift */; };
 		F272924326B6A35F006C047E /* AllChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272924226B6A35F006C047E /* AllChartsViewController.swift */; };
 		F272924526B78894006C047E /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272924426B78894006C047E /* CryptoModel.swift */; };
 		F272924726B7892C006C047E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272924626B7892C006C047E /* Constants.swift */; };
 		F272924926B78A0B006C047E /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272924826B78A0B006C047E /* HttpRequest.swift */; };
 		F272924B26B78D94006C047E /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272924A26B78D94006C047E /* HTTPStatusCode.swift */; };
-		F29EE02826B533E300418337 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29EE02726B533E300418337 /* NavViewController.swift */; };
 		F2D3249926B934A500D6F9D7 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3249826B934A400D6F9D7 /* RealmModel.swift */; };
-		F2D67A6B26B7F97D00A2B3B6 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D67A6A26B7F97D00A2B3B6 /* AnimationView.swift */; };
-		F2DF1FF526B3C76F0007D25F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF1FF426B3C76F0007D25F /* AppDelegate.swift */; };
-		F2DF1FF726B3C76F0007D25F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF1FF626B3C76F0007D25F /* SceneDelegate.swift */; };
 		F2DF1FFC26B3C76F0007D25F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DF1FFA26B3C76F0007D25F /* Main.storyboard */; };
-		F2DF1FFE26B3C7770007D25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DF1FFD26B3C7770007D25F /* Assets.xcassets */; };
-		F2DF200126B3C7770007D25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DF1FFF26B3C7770007D25F /* LaunchScreen.storyboard */; };
 		F2DF202A26B3C9770007D25F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF202926B3C9770007D25F /* HomeViewController.swift */; };
-		F2DF202D26B3CB190007D25F /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF202C26B3CB190007D25F /* ControllerFactory.swift */; };
 		F2DF203026B3CF690007D25F /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF202F26B3CF690007D25F /* ServerManager.swift */; };
 		F2DF203326B3DA710007D25F /* UIViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF203226B3DA710007D25F /* UIViewcontroller.swift */; };
 		F2DF203926B3DE780007D25F /* BalanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF203726B3DE780007D25F /* BalanceCollectionViewCell.swift */; };
@@ -30,50 +28,27 @@
 		F2DF203C26B3E0DD0007D25F /* UIView+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF203B26B3E0DD0007D25F /* UIView+UIColor.swift */; };
 		F2DF203F26B3E4A40007D25F /* ChartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF203D26B3E4A30007D25F /* ChartsCollectionViewCell.swift */; };
 		F2DF204026B3E4A40007D25F /* ChartsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DF203E26B3E4A30007D25F /* ChartsCollectionViewCell.xib */; };
-		F821788F04941873FEECC8FB /* Pods_MadDevs_Crypto_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACBEFD1D43C45C7FB68A063 /* Pods_MadDevs_Crypto_.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F2DF200826B3C7780007D25F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2DF1FE926B3C76F0007D25F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2DF1FF026B3C76F0007D25F;
-			remoteInfo = "MadDevs(Crypto)";
-		};
-		F2DF201326B3C7780007D25F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2DF1FE926B3C76F0007D25F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2DF1FF026B3C76F0007D25F;
-			remoteInfo = "MadDevs(Crypto)";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		32AB03A1996FDA4DAB67748D /* Pods-MadDevs(Crypto).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadDevs(Crypto).release.xcconfig"; path = "Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto).release.xcconfig"; sourceTree = "<group>"; };
-		5ACBEFD1D43C45C7FB68A063 /* Pods_MadDevs_Crypto_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadDevs_Crypto_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B8854EF38B696105224FE3 /* Pods-MadDevs(Crypto).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadDevs(Crypto).debug.xcconfig"; path = "Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto).debug.xcconfig"; sourceTree = "<group>"; };
+		3BE10A2C0898B45A77D7452B /* Pods-MadDevs(Crypto).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadDevs(Crypto).debug.xcconfig"; path = "Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto).debug.xcconfig"; sourceTree = "<group>"; };
+		8366B495277AEE3100724841 /* ControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		8366B4A0277AF2F700724841 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8366B4A1277AF2F800724841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8366B4A8277B643900724841 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Crypto-Currency/Images.xcassets"; sourceTree = "<group>"; };
+		A3763A3BE66F101DBD3E8BD8 /* Pods_MadDevs_Crypto_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadDevs_Crypto_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E978EE90656172D01AFCE3EA /* Pods-MadDevs(Crypto).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadDevs(Crypto).release.xcconfig"; path = "Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto).release.xcconfig"; sourceTree = "<group>"; };
 		F253459226B96C4E006AC106 /* RealmDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabase.swift; sourceTree = "<group>"; };
 		F272924226B6A35F006C047E /* AllChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChartsViewController.swift; sourceTree = "<group>"; };
 		F272924426B78894006C047E /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		F272924626B7892C006C047E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F272924826B78A0B006C047E /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		F272924A26B78D94006C047E /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		F29EE02726B533E300418337 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		F2D3249826B934A400D6F9D7 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
-		F2D67A6A26B7F97D00A2B3B6 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
-		F2DF1FF126B3C76F0007D25F /* MadDevs(Crypto).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MadDevs(Crypto).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2DF1FF426B3C76F0007D25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2DF1FF626B3C76F0007D25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2DF1FF126B3C76F0007D25F /* Crypto-Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto-Currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DF1FFB26B3C76F0007D25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2DF1FFD26B3C7770007D25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F2DF200026B3C7770007D25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2DF200226B3C7770007D25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2DF200726B3C7780007D25F /* MadDevs(Crypto)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MadDevs(Crypto)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2DF201226B3C7780007D25F /* MadDevs(Crypto)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MadDevs(Crypto)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DF202926B3C9770007D25F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F2DF202C26B3CB190007D25F /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		F2DF202F26B3CF690007D25F /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		F2DF203226B3DA710007D25F /* UIViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewcontroller.swift; sourceTree = "<group>"; };
 		F2DF203726B3DE780007D25F /* BalanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -88,21 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F821788F04941873FEECC8FB /* Pods_MadDevs_Crypto_.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2DF200426B3C7780007D25F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2DF200F26B3C7780007D25F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F195459C08B65E6D02394A19 /* Pods_MadDevs_Crypto_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +73,16 @@
 		26B65B6A6743A0324A42B8E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79B8854EF38B696105224FE3 /* Pods-MadDevs(Crypto).debug.xcconfig */,
-				32AB03A1996FDA4DAB67748D /* Pods-MadDevs(Crypto).release.xcconfig */,
+				3BE10A2C0898B45A77D7452B /* Pods-MadDevs(Crypto).debug.xcconfig */,
+				E978EE90656172D01AFCE3EA /* Pods-MadDevs(Crypto).release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5F555D1F0DE446CE65A66B63 /* Frameworks */ = {
+		3E5C6C7E893AD69657BA768B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5ACBEFD1D43C45C7FB68A063 /* Pods_MadDevs_Crypto_.framework */,
+				A3763A3BE66F101DBD3E8BD8 /* Pods_MadDevs_Crypto_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,38 +98,34 @@
 		F2DF1FE826B3C76F0007D25F = {
 			isa = PBXGroup;
 			children = (
-				F2DF1FF326B3C76F0007D25F /* MadDevs(Crypto) */,
+				8366B4A8277B643900724841 /* Images.xcassets */,
+				F2DF1FF326B3C76F0007D25F /* Crypto Currency */,
 				F2DF1FF226B3C76F0007D25F /* Products */,
 				26B65B6A6743A0324A42B8E2 /* Pods */,
-				5F555D1F0DE446CE65A66B63 /* Frameworks */,
+				3E5C6C7E893AD69657BA768B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F2DF1FF226B3C76F0007D25F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2DF1FF126B3C76F0007D25F /* MadDevs(Crypto).app */,
-				F2DF200726B3C7780007D25F /* MadDevs(Crypto)Tests.xctest */,
-				F2DF201226B3C7780007D25F /* MadDevs(Crypto)UITests.xctest */,
+				F2DF1FF126B3C76F0007D25F /* Crypto-Currency.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2DF1FF326B3C76F0007D25F /* MadDevs(Crypto) */ = {
+		F2DF1FF326B3C76F0007D25F /* Crypto Currency */ = {
 			isa = PBXGroup;
 			children = (
+				8366B4A1277AF2F800724841 /* AppDelegate.swift */,
+				8366B4A0277AF2F700724841 /* SceneDelegate.swift */,
 				F2DF203126B3DA610007D25F /* Extension */,
 				F253459126B96C38006AC106 /* DataBase */,
 				F2DF202E26B3CF5C0007D25F /* Server */,
-				F2DF202B26B3CB090007D25F /* Common */,
 				F2DF202426B3C7F20007D25F /* Module */,
-				F2DF1FF426B3C76F0007D25F /* AppDelegate.swift */,
-				F2DF1FF626B3C76F0007D25F /* SceneDelegate.swift */,
-				F2DF1FFD26B3C7770007D25F /* Assets.xcassets */,
-				F2DF1FFF26B3C7770007D25F /* LaunchScreen.storyboard */,
 				F2DF200226B3C7770007D25F /* Info.plist */,
 			);
-			path = "MadDevs(Crypto)";
+			path = "Crypto Currency";
 			sourceTree = "<group>";
 		};
 		F2DF202426B3C7F20007D25F /* Module */ = {
@@ -193,9 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F2DF202926B3C9770007D25F /* HomeViewController.swift */,
-				F29EE02726B533E300418337 /* NavViewController.swift */,
 				F272924226B6A35F006C047E /* AllChartsViewController.swift */,
-				F2D67A6A26B7F97D00A2B3B6 /* AnimationView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,14 +173,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F2DF202B26B3CB090007D25F /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F2DF202C26B3CB190007D25F /* ControllerFactory.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		F2DF202E26B3CF5C0007D25F /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +187,7 @@
 		F2DF203126B3DA610007D25F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8366B495277AEE3100724841 /* ControllerFactory.swift */,
 				F2DF203226B3DA710007D25F /* UIViewcontroller.swift */,
 				F2DF203B26B3E0DD0007D25F /* UIView+UIColor.swift */,
 			);
@@ -260,60 +208,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2DF1FF026B3C76F0007D25F /* MadDevs(Crypto) */ = {
+		F2DF1FF026B3C76F0007D25F /* Crypto-Currency */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2DF201B26B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)" */;
+			buildConfigurationList = F2DF201B26B3C7780007D25F /* Build configuration list for PBXNativeTarget "Crypto-Currency" */;
 			buildPhases = (
-				B7241FAAA548245A81D4451A /* [CP] Check Pods Manifest.lock */,
+				6B51F2C3DEC2D63C739C9D12 /* [CP] Check Pods Manifest.lock */,
 				F2DF1FED26B3C76F0007D25F /* Sources */,
 				F2DF1FEE26B3C76F0007D25F /* Frameworks */,
 				F2DF1FEF26B3C76F0007D25F /* Resources */,
-				023CAEC9CF364D1469868E3B /* [CP] Embed Pods Frameworks */,
+				C5A7326C6F4FB25738F3187A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "MadDevs(Crypto)";
+			name = "Crypto-Currency";
 			productName = "MadDevs(Crypto)";
-			productReference = F2DF1FF126B3C76F0007D25F /* MadDevs(Crypto).app */;
+			productReference = F2DF1FF126B3C76F0007D25F /* Crypto-Currency.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F2DF200626B3C7780007D25F /* MadDevs(Crypto)Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2DF201E26B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)Tests" */;
-			buildPhases = (
-				F2DF200326B3C7780007D25F /* Sources */,
-				F2DF200426B3C7780007D25F /* Frameworks */,
-				F2DF200526B3C7780007D25F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2DF200926B3C7780007D25F /* PBXTargetDependency */,
-			);
-			name = "MadDevs(Crypto)Tests";
-			productName = "MadDevs(Crypto)Tests";
-			productReference = F2DF200726B3C7780007D25F /* MadDevs(Crypto)Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F2DF201126B3C7780007D25F /* MadDevs(Crypto)UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2DF202126B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)UITests" */;
-			buildPhases = (
-				F2DF200E26B3C7780007D25F /* Sources */,
-				F2DF200F26B3C7780007D25F /* Frameworks */,
-				F2DF201026B3C7780007D25F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2DF201426B3C7780007D25F /* PBXTargetDependency */,
-			);
-			name = "MadDevs(Crypto)UITests";
-			productName = "MadDevs(Crypto)UITests";
-			productReference = F2DF201226B3C7780007D25F /* MadDevs(Crypto)UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -327,17 +239,9 @@
 					F2DF1FF026B3C76F0007D25F = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					F2DF200626B3C7780007D25F = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = F2DF1FF026B3C76F0007D25F;
-					};
-					F2DF201126B3C7780007D25F = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = F2DF1FF026B3C76F0007D25F;
-					};
 				};
 			};
-			buildConfigurationList = F2DF1FEC26B3C76F0007D25F /* Build configuration list for PBXProject "MadDevs(Crypto)" */;
+			buildConfigurationList = F2DF1FEC26B3C76F0007D25F /* Build configuration list for PBXProject "Crypro Currency" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -350,9 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2DF1FF026B3C76F0007D25F /* MadDevs(Crypto) */,
-				F2DF200626B3C7780007D25F /* MadDevs(Crypto)Tests */,
-				F2DF201126B3C7780007D25F /* MadDevs(Crypto)UITests */,
+				F2DF1FF026B3C76F0007D25F /* Crypto-Currency */,
 			);
 		};
 /* End PBXProject section */
@@ -362,49 +264,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DF200126B3C7770007D25F /* LaunchScreen.storyboard in Resources */,
-				F2DF1FFE26B3C7770007D25F /* Assets.xcassets in Resources */,
 				F2DF1FFC26B3C76F0007D25F /* Main.storyboard in Resources */,
+				8366B4A9277B643900724841 /* Images.xcassets in Resources */,
 				F2DF204026B3E4A40007D25F /* ChartsCollectionViewCell.xib in Resources */,
 				F2DF203A26B3DE780007D25F /* BalanceCollectionViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2DF200526B3C7780007D25F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2DF201026B3C7780007D25F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		023CAEC9CF364D1469868E3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7241FAAA548245A81D4451A /* [CP] Check Pods Manifest.lock */ = {
+		6B51F2C3DEC2D63C739C9D12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,6 +296,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C5A7326C6F4FB25738F3187A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MadDevs(Crypto)/Pods-MadDevs(Crypto)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -433,17 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8366B496277AEE3100724841 /* ControllerFactory.swift in Sources */,
 				F2DF203C26B3E0DD0007D25F /* UIView+UIColor.swift in Sources */,
 				F2DF203326B3DA710007D25F /* UIViewcontroller.swift in Sources */,
-				F29EE02826B533E300418337 /* NavViewController.swift in Sources */,
-				F2DF1FF526B3C76F0007D25F /* AppDelegate.swift in Sources */,
 				F272924326B6A35F006C047E /* AllChartsViewController.swift in Sources */,
-				F2DF202D26B3CB190007D25F /* ControllerFactory.swift in Sources */,
-				F2D67A6B26B7F97D00A2B3B6 /* AnimationView.swift in Sources */,
 				F2DF203F26B3E4A40007D25F /* ChartsCollectionViewCell.swift in Sources */,
-				F2DF1FF726B3C76F0007D25F /* SceneDelegate.swift in Sources */,
+				8366B4A2277AF2F800724841 /* SceneDelegate.swift in Sources */,
 				F272924526B78894006C047E /* CryptoModel.swift in Sources */,
 				F2DF203026B3CF690007D25F /* ServerManager.swift in Sources */,
+				8366B4A3277AF2F800724841 /* AppDelegate.swift in Sources */,
 				F272924926B78A0B006C047E /* HttpRequest.swift in Sources */,
 				F2D3249926B934A500D6F9D7 /* RealmModel.swift in Sources */,
 				F272924726B7892C006C047E /* Constants.swift in Sources */,
@@ -454,34 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2DF200326B3C7780007D25F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2DF200E26B3C7780007D25F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F2DF200926B3C7780007D25F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2DF1FF026B3C76F0007D25F /* MadDevs(Crypto) */;
-			targetProxy = F2DF200826B3C7780007D25F /* PBXContainerItemProxy */;
-		};
-		F2DF201426B3C7780007D25F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2DF1FF026B3C76F0007D25F /* MadDevs(Crypto) */;
-			targetProxy = F2DF201326B3C7780007D25F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2DF1FFA26B3C76F0007D25F /* Main.storyboard */ = {
@@ -490,14 +348,6 @@
 				F2DF1FFB26B3C76F0007D25F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F2DF1FFF26B3C7770007D25F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2DF200026B3C7770007D25F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,19 +473,20 @@
 		};
 		F2DF201C26B3C7780007D25F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79B8854EF38B696105224FE3 /* Pods-MadDevs(Crypto).debug.xcconfig */;
+			baseConfigurationReference = 3BE10A2C0898B45A77D7452B /* Pods-MadDevs(Crypto).debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Crypto Currency/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.Crypto-Currency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -644,113 +495,29 @@
 		};
 		F2DF201D26B3C7780007D25F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32AB03A1996FDA4DAB67748D /* Pods-MadDevs(Crypto).release.xcconfig */;
+			baseConfigurationReference = E978EE90656172D01AFCE3EA /* Pods-MadDevs(Crypto).release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Crypto Currency/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.Crypto-Currency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F2DF201F26B3C7780007D25F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadDevs(Crypto).app/MadDevs(Crypto)";
-			};
-			name = Debug;
-		};
-		F2DF202026B3C7780007D25F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadDevs(Crypto).app/MadDevs(Crypto)";
-			};
-			name = Release;
-		};
-		F2DF202226B3C7780007D25F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MadDevs(Crypto)";
-			};
-			name = Debug;
-		};
-		F2DF202326B3C7780007D25F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57ZJPHWU8J;
-				INFOPLIST_FILE = "MadDevs(Crypto)UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ostep.MadDevs-Crypto-UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MadDevs(Crypto)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2DF1FEC26B3C76F0007D25F /* Build configuration list for PBXProject "MadDevs(Crypto)" */ = {
+		F2DF1FEC26B3C76F0007D25F /* Build configuration list for PBXProject "Crypro Currency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2DF201926B3C7780007D25F /* Debug */,
@@ -759,29 +526,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2DF201B26B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)" */ = {
+		F2DF201B26B3C7780007D25F /* Build configuration list for PBXNativeTarget "Crypto-Currency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2DF201C26B3C7780007D25F /* Debug */,
 				F2DF201D26B3C7780007D25F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2DF201E26B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2DF201F26B3C7780007D25F /* Debug */,
-				F2DF202026B3C7780007D25F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2DF202126B3C7780007D25F /* Build configuration list for PBXNativeTarget "MadDevs(Crypto)UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2DF202226B3C7780007D25F /* Debug */,
-				F2DF202326B3C7780007D25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
